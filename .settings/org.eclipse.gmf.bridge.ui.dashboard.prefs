@@ -1,0 +1,7 @@
+eclipse.preferences.version=1
+gmf_dashboard/domainGenerationModel=platform\:/resource/Petrinet/model/petrinet2.genmodel
+gmf_dashboard/domainModel=platform\:/resource/Petrinet/model/petrinet.ecore
+gmf_dashboard/generationModel=platform\:/resource/Petrinet/model/petrinet.gmfgen
+gmf_dashboard/graphicalDefinitionModel=platform\:/resource/Petrinet/model/petrinet.gmfgraph
+gmf_dashboard/mappingModel=platform\:/resource/Petrinet/model/petrinet.gmfmap
+gmf_dashboard/toolingDefinitionModel=platform\:/resource/Petrinet/model/petrinet.gmftool
