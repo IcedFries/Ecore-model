@@ -21,6 +21,31 @@
         figureQualifiedClassName="org.eclipse.draw2d.FreeformLayer"/>
     <domainDiagramElement
         href="petrinet2.genmodel#//petrinet/Petrinet"/>
+    <childNodes
+        visualID="3001"
+        editPartClassName="TokenEditPart"
+        itemSemanticEditPolicyClassName="TokenItemSemanticEditPolicy"
+        canonicalEditPolicyClassName="TokenCanonicalEditPolicy"
+        graphicalNodeEditPolicyClassName="TokenGraphicalNodeEditPolicy"
+        createCommandClassName="TokenCreateCommand"
+        containers="//@diagram/@topLevelNodes.1">
+      <diagramRunTimeClass
+          href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
+      <elementType
+          xsi:type="gmfgen:MetamodelType"
+          editHelperClassName="TokenEditHelper"/>
+      <viewmap
+          xsi:type="gmfgen:FigureViewmap"
+          figureQualifiedClassName="org.eclipse.draw2d.Ellipse"/>
+      <modelFacet>
+        <metaClass
+            href="petrinet2.genmodel#//petrinet/Token"/>
+        <containmentMetaFeature
+            href="petrinet2.genmodel#//petrinet/Place/tokens"/>
+        <childMetaFeature
+            href="petrinet2.genmodel#//petrinet/Place/tokens"/>
+      </modelFacet>
+    </childNodes>
     <topLevelNodes
         visualID="2001"
         editPartClassName="TransitionEditPart"
@@ -70,6 +95,7 @@
         editPartClassName="PlaceEditPart"
         itemSemanticEditPolicyClassName="PlaceItemSemanticEditPolicy"
         canonicalEditPolicyClassName="PlaceCanonicalEditPolicy"
+        childNodes="//@diagram/@childNodes.0"
         graphicalNodeEditPolicyClassName="PlaceGraphicalNodeEditPolicy"
         createCommandClassName="PlaceCreateCommand">
       <diagramRunTimeClass
@@ -79,9 +105,9 @@
           editHelperClassName="PlaceEditHelper"/>
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
-          layoutType="FLOW_LAYOUT"
+          layoutType="XY_LAYOUT"
           className="PlaceFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PlaceFigure extends org.eclipse.draw2d.RectangleFigure {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel fFigurePlaceNameFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PlaceFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;org.eclipse.draw2d.FlowLayout layoutThis = new org.eclipse.draw2d.FlowLayout();&#xA;&#x9;layoutThis.setStretchMinorAxis(false);&#xA;&#x9;layoutThis.setMinorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#xA;&#x9;layoutThis.setMajorAlignment(org.eclipse.draw2d.FlowLayout.ALIGN_LEFTTOP&#xA;);&#xA;&#x9;layoutThis.setMajorSpacing(5);&#xA;&#x9;layoutThis.setMinorSpacing(5);&#xA;&#x9;layoutThis.setHorizontal(true);&#xA;&#xA;&#x9;this.setLayoutManager(layoutThis);&#xA;&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;fFigurePlaceNameFigure = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;fFigurePlaceNameFigure.setText(&quot;&lt;...>&quot;);&#xA;&#xA;this.add(fFigurePlaceNameFigure);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel getFigurePlaceNameFigure() {&#xA;&#x9;&#x9;return fFigurePlaceNameFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class PlaceFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private org.eclipse.draw2d.Ellipse fFigurePlaceFigure; &#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public PlaceFigure() {&#xA;&#x9;&#x9;this.setLayoutManager(new org.eclipse.draw2d.XYLayout());&#xA;&#x9;&#x9;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel placeNameFigure0 = new org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel();&#xA;&#xA;placeNameFigure0.setText(&quot;&quot;);&#xA;&#xA;this.add(placeNameFigure0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public org.eclipse.draw2d.Ellipse getFigurePlaceFigure() {&#xA;&#x9;&#x9;return fFigurePlaceFigure;&#xA;&#x9;}&#xA;&#xA;&#xA;}&#xA;&#xA;"/>
       <modelFacet>
         <metaClass
             href="petrinet2.genmodel#//petrinet/Place"/>
@@ -99,8 +125,8 @@
             href="../../../plugin/org.eclipse.gmf.runtime.notation/model/notation.genmodel#//notation/Node"/>
         <viewmap
             xsi:type="gmfgen:ParentAssignedViewmap"
-            getterName="getFigurePlaceNameFigure"
-            figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.WrappingLabel"/>
+            getterName="getFigurePlaceFigure"
+            figureQualifiedClassName="org.eclipse.draw2d.Ellipse"/>
         <modelFacet
             xsi:type="gmfgen:FeatureLabelModelFacet"
             parser="//@labelParsers/@implementations.0">
@@ -121,8 +147,9 @@
           xsi:type="gmfgen:MetamodelType"
           editHelperClassName="ArcEditHelper"/>
       <viewmap
-          xsi:type="gmfgen:FigureViewmap"
-          figureQualifiedClassName="org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx"/>
+          xsi:type="gmfgen:InnerClassViewmap"
+          className="ArcFigure"
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class ArcFigure extends org.eclipse.gmf.runtime.draw2d.ui.figures.PolylineConnectionEx {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public ArcFigure() {&#xA;&#x9;&#x9;&#xA;&#x9;&#x9;createContents();&#xA;&#x9;}&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;private void createContents(){&#xA;&#xA;&#xA;org.eclipse.draw2d.PolylineDecoration arcArrowFigure0 = new org.eclipse.draw2d.PolylineDecoration();&#xA;&#xA;&#x9;arcArrowFigure0.setForegroundColor(ARCARROWFIGURE0_FORE&#xA;);&#xA;&#xA;this.add(arcArrowFigure0);&#xA;&#xA;&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color ARCARROWFIGURE0_FORE = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;"/>
       <modelFacet
           xsi:type="gmfgen:TypeLinkModelFacet">
         <metaClass
@@ -155,6 +182,11 @@
             title="Place"
             description="Create new Place"
             genNodes="//@diagram/@topLevelNodes.1"/>
+        <entries
+            xsi:type="gmfgen:ToolEntry"
+            title="Token"
+            description="Create new token"
+            genNodes="//@diagram/@childNodes.0"/>
       </groups>
     </palette>
     <preferencePages
@@ -195,6 +227,9 @@
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.0"/>
+    <childReferences
+        parent="//@diagram/@topLevelNodes.1"
+        child="//@diagram/@childNodes.0"/>
     <childReferences
         parent="//@diagram"
         child="//@diagram/@topLevelNodes.1"/>

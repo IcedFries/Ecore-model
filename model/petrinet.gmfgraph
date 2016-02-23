@@ -46,7 +46,17 @@
             xsi:type="gmfgraph:Label"
             name="PlaceNameFigure"/>
       </actualFigure>
-      <accessors/>
+      <accessors
+          figure="//@figures.0/@descriptors.2/@actualFigure"/>
+    </descriptors>
+    <descriptors
+        name="TokenFigure">
+      <actualFigure
+          xsi:type="gmfgraph:Ellipse"
+          name="TokenFigure"/>
+      <accessors
+          accessor="getFigureTokenNameFigure"
+          figure="//@figures.0/@descriptors.3/@actualFigure"/>
     </descriptors>
   </figures>
   <nodes
@@ -55,6 +65,9 @@
   <nodes
       name="Place"
       figure="PlaceFigure"/>
+  <nodes
+      name="Token"
+      figure="TokenFigure"/>
   <connections
       name="Arc"
       figure="ArcFigure"/>

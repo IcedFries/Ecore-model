@@ -44,6 +44,22 @@
           href="petrinet.gmftool#//@palette/@tools.0/@tools.2"/>
       <diagramNode
           href="petrinet.gmfgraph#Place"/>
+      <children
+          referencedChild="//@nodes.1/@ownedChild">
+        <containmentFeature
+            href="petrinet.ecore#//Place/tokens"/>
+        <childrenFeature
+            href="petrinet.ecore#//Place/tokens"/>
+        <ownedChild>
+          <domainMetaElement
+              href="petrinet.ecore#//Token"/>
+          <tool
+              xsi:type="gmftool:CreationTool"
+              href="petrinet.gmftool#//@palette/@tools.0/@tools.3"/>
+          <diagramNode
+              href="petrinet.gmfgraph#Token"/>
+        </ownedChild>
+      </children>
     </ownedChild>
   </nodes>
   <links>
