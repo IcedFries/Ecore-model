@@ -53,10 +53,10 @@
         name="TokenFigure">
       <actualFigure
           xsi:type="gmfgraph:Ellipse"
-          name="TokenFigure"/>
-      <accessors
-          accessor="getFigureTokenNameFigure"
-          figure="//@figures.0/@descriptors.3/@actualFigure"/>
+          name="TokenFigure">
+        <backgroundColor
+            xsi:type="gmfgraph:RGBColor"/>
+      </actualFigure>
     </descriptors>
   </figures>
   <nodes
