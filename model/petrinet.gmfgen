@@ -37,10 +37,16 @@
       <viewmap
           xsi:type="gmfgen:InnerClassViewmap"
           className="TokenFigure"
-          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TokenFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TokenFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
+          classBody="&#xA;/**&#xA; * @generated&#xA; */&#xA;public class TokenFigure extends org.eclipse.draw2d.Ellipse {&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#x9;/**&#xA;&#x9; * @generated&#xA;&#x9; */&#xA;&#x9;public TokenFigure() {&#xA;&#x9;&#x9;&#x9;&#x9;&#x9;this.setBackgroundColor(THIS_BACK&#xA;);&#xA;this.setPreferredSize(new org.eclipse.draw2d.geometry.Dimension(getMapMode().DPtoLP(10)&#xA;, getMapMode().DPtoLP(10)&#xA;));&#xA;&#x9;}&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;&#xA;}&#xA;&#xA;/**&#xA; * @generated&#xA; */&#xA;static final org.eclipse.swt.graphics.Color THIS_BACK = new org.eclipse.swt.graphics.Color(null, 0, 0, 0);&#xA;&#xA;">
         <attributes
             xsi:type="gmfgen:StyleAttributes"
             fixedBackground="true"/>
+        <attributes
+            xsi:type="gmfgen:ResizeConstraints"/>
+        <attributes
+            xsi:type="gmfgen:DefaultSizeAttributes"
+            width="10"
+            height="10"/>
       </viewmap>
       <modelFacet>
         <metaClass
@@ -168,6 +174,8 @@
         <targetMetaFeature
             href="petrinet2.genmodel#//petrinet/Arc/target"/>
       </modelFacet>
+      <creationConstraints
+          sourceEnd="//@expressionProviders/@providers.0/@expressions.0"/>
     </links>
     <palette>
       <groups
@@ -314,6 +322,14 @@
   </propertySheet>
   <domainGenModel
       href="petrinet2.genmodel#/"/>
+  <expressionProviders>
+    <providers
+        xsi:type="gmfgen:GenExpressionInterpreter">
+      <expressions
+          xsi:type="gmfgen:GenConstraint"
+          body="(self.oclIsKindOf(Place) and oppositeEnd.oclIsKindOf(Transition) ) or &#xD;&#xA;(self.oclIsKindOf(Transition) and oppositeEnd.oclIsKindOf(Place) )"/>
+    </providers>
+  </expressionProviders>
   <labelParsers
       extensibleViaService="true">
     <implementations
