@@ -78,6 +78,10 @@
     <linkMetaFeature
         xsi:type="ecore:EReference"
         href="petrinet.ecore#//Arc/target"/>
+    <creationConstraints>
+      <sourceEnd
+          body="(self.oclIsKindOf(Place) and oppositeEnd.oclIsKindOf(Transition) ) or &#xD;&#xA;(self.oclIsKindOf(Transition) and oppositeEnd.oclIsKindOf(Place) )"/>
+    </creationConstraints>
   </links>
   <diagram>
     <diagramCanvas
