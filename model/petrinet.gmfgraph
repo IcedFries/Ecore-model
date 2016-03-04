@@ -11,7 +11,8 @@
         name="ArcFigure">
       <actualFigure
           xsi:type="gmfgraph:PolylineConnection"
-          name="ArcFigure">
+          name="ArcFigure"
+          targetDecoration="//@figures.0/@descriptors.0/@actualFigure/@children.0">
         <children
             xsi:type="gmfgraph:PolylineDecoration"
             name="ArcArrowFigure">
